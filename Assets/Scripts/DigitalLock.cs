@@ -13,6 +13,7 @@ public class DigitalLock : MonoBehaviour
     private string _stringUserCode;
     private bool _isWorking = true;
 
+
     private void OnEnable()
     {
         _digitalLockView.OnNumberButtonClickEvent += OnClickNumberButton;
@@ -23,12 +24,25 @@ public class DigitalLock : MonoBehaviour
         _digitalLockView.OnNumberButtonClickEvent -= OnClickNumberButton;
     }
 
+    
     public void SetCorrectCode(int newCode)
     {
         _correctCode = newCode;
     }
 
-    public void OnClickNumberButton(int clickedNumber)
+    public void OnWrongCodeInputed()
+    {
+        _stringUserCode = "";
+        _digitalLockView.SetOutputCodeString(_stringUserCode);
+    }
+
+    public void OnCorrectCodeInputed()
+    {
+        _isWorking = false;
+    }
+    
+    
+    private void OnClickNumberButton(int clickedNumber)
     {
         if (_isWorking == false) return;
         
@@ -48,16 +62,5 @@ public class DigitalLock : MonoBehaviour
                 _onWrongCodeInputed?.Invoke();
             }
         }
-    }
-
-    public void OnWrongCodeInputed()
-    {
-        _stringUserCode = "";
-        _digitalLockView.SetOutputCodeString(_stringUserCode);
-    }
-
-    public void OnCorrectCodeInputed()
-    {
-        _isWorking = false;
     }
 }

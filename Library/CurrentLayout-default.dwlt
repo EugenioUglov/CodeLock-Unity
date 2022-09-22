@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1920
     height: 1007
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Inspector
   m_RootView: {fileID: 11}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 613}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 47
+  controlID: 25
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 342}
   m_MaxSize: {x: 8003, y: 8042}
   vertical: 1
-  controlID: 46
+  controlID: 24
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 563}
   m_MaxSize: {x: 18004, y: 18063}
   vertical: 1
-  controlID: 44
+  controlID: 46
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -227,7 +227,7 @@ MonoBehaviour:
   m_MinSize: {x: 276, y: 563}
   m_MaxSize: {x: 10001, y: 18063}
   vertical: 1
-  controlID: 78
+  controlID: 48
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -276,7 +276,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 1007
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 613}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -349,7 +349,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 563}
   m_MaxSize: {x: 18004, y: 18063}
   vertical: 0
-  controlID: 45
+  controlID: 47
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -555,9 +555,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 70530000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 52fbffff
+      m_SelectedIDs: 00530000
+      m_LastClickedID: 21248
+      m_ExpandedIDs: 52fbffff245200003e52000056520000725200007c5200009e520000ac520000be520000d0520000da520000ec520000f6520000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -617,9 +617,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 389, y: 181.5, z: 0}
+    m_Target: {x: 313.8646, y: 474.27203, z: 57.524353}
     speed: 2
-    m_Value: {x: 389, y: 181.5, z: 0}
+    m_Value: {x: 313.8646, y: 474.27203, z: 57.524353}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -666,13 +666,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.20228365, y: -0.07571746, z: 0.0156887, w: -0.97626936}
+    m_Target: {x: 0.032682493, y: -0.011396666, z: -0.00037270086, w: -0.99940103}
     speed: 2
-    m_Value: {x: -0.20228365, y: -0.07571745, z: 0.0156887, w: -0.9762693}
+    m_Value: {x: 0.02818435, y: -0.012897519, z: -0.00036368903, w: -0.9995195}
   m_Size:
-    m_Target: 316.3894
+    m_Target: 406.2304
     speed: 2
-    m_Value: 316.3894
+    m_Value: 388.73724
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -743,13 +743,13 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scripts
   m_LastFoldersGridSize: 16
-  m_LastProjectPath: D:\Projects\Unity\Code Lock
+  m_LastProjectPath: D:\Projects\Unity\CodeLock-Unity
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 70530000
-    m_LastClickedID: 21360
+    m_SelectedIDs: 72530000
+    m_LastClickedID: 21362
     m_ExpandedIDs: 000000006e53000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -809,18 +809,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: 46590000e268000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: DigitalLock
+      m_OriginalName: DigitalLock
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 2310
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 7}
     m_CreateAssetUtility:
@@ -891,7 +891,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 600
+  m_LastVerticalScrollValue: 655
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
