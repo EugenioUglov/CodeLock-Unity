@@ -159,7 +159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -72, y: -48}
+  m_AnchoredPosition: {x: 141, y: -48}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &53277915
@@ -208,7 +208,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1634969132}
         m_TargetAssemblyTypeName: DigitalLockView, Assembly-CSharp
-        m_MethodName: OnClickNumberButton
+        m_MethodName: OnNumberButtonClick
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -450,7 +450,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -68, y: -132}
+  m_AnchoredPosition: {x: -68, y: -91}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &636811722
@@ -499,7 +499,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1634969132}
         m_TargetAssemblyTypeName: DigitalLockView, Assembly-CSharp
-        m_MethodName: OnClickNumberButton
+        m_MethodName: OnNumberButtonClick
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -719,6 +719,43 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804583573}
   m_CullTransparentMesh: 1
+--- !u!1 &864713486
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 864713487}
+  m_Layer: 5
+  m_Name: DigitalLock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &864713487
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864713486}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 961403110}
+  - {fileID: 2105079189}
+  m_Father: {fileID: 1634969131}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &961403107
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,11 +878,11 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961403107}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1634969131}
+  m_Father: {fileID: 864713487}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1038,7 +1075,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -281, y: -188}
+  m_AnchoredPosition: {x: 140, y: -88}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1136508286
@@ -1087,7 +1124,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1634969132}
         m_TargetAssemblyTypeName: DigitalLockView, Assembly-CSharp
-        m_MethodName: OnClickNumberButton
+        m_MethodName: OnNumberButtonClick
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1171,7 +1208,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -281, y: -137}
+  m_AnchoredPosition: {x: -68, y: -51}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1163397596
@@ -1220,7 +1257,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1634969132}
         m_TargetAssemblyTypeName: DigitalLockView, Assembly-CSharp
-        m_MethodName: OnClickNumberButton
+        m_MethodName: OnNumberButtonClick
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1598,8 +1635,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 961403110}
-  - {fileID: 2105079189}
+  - {fileID: 864713487}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1621,7 +1657,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _outputCodeTMP: {fileID: 961403108}
-  _controller: {fileID: 1634969129}
 --- !u!114 &1634969133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1634,7 +1669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dac84aa4bb81243a516abdb0c8a5f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _correctCode: 1111
+  _correctCode: 878
   _onCorrectCodeInputed:
     m_PersistentCalls:
       m_Calls:
@@ -1702,7 +1737,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -281, y: -54}
+  m_AnchoredPosition: {x: -67, y: -180}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1668455700
@@ -1751,7 +1786,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1634969132}
         m_TargetAssemblyTypeName: DigitalLockView, Assembly-CSharp
-        m_MethodName: OnClickNumberButton
+        m_MethodName: OnNumberButtonClick
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1914,7 +1949,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -69, y: -87}
+  m_AnchoredPosition: {x: -280, y: -92}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1784586861
@@ -1963,7 +1998,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1634969132}
         m_TargetAssemblyTypeName: DigitalLockView, Assembly-CSharp
-        m_MethodName: OnClickNumberButton
+        m_MethodName: OnNumberButtonClick
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2126,7 +2161,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -281, y: -90}
+  m_AnchoredPosition: {x: -281, y: -52}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1913463330
@@ -2175,7 +2210,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1634969132}
         m_TargetAssemblyTypeName: DigitalLockView, Assembly-CSharp
-        m_MethodName: OnClickNumberButton
+        m_MethodName: OnNumberButtonClick
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2259,7 +2294,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 139, y: -85}
+  m_AnchoredPosition: {x: 139, y: -136}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2010197829
@@ -2308,7 +2343,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1634969132}
         m_TargetAssemblyTypeName: DigitalLockView, Assembly-CSharp
-        m_MethodName: OnClickNumberButton
+        m_MethodName: OnNumberButtonClick
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2471,7 +2506,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 138, y: -44}
+  m_AnchoredPosition: {x: -67, y: -132}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2056639901
@@ -2520,7 +2555,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1634969132}
         m_TargetAssemblyTypeName: DigitalLockView, Assembly-CSharp
-        m_MethodName: OnClickNumberButton
+        m_MethodName: OnNumberButtonClick
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2604,7 +2639,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -61, y: -188}
+  m_AnchoredPosition: {x: -279, y: -133}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2098509398
@@ -2653,7 +2688,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1634969132}
         m_TargetAssemblyTypeName: DigitalLockView, Assembly-CSharp
-        m_MethodName: OnClickNumberButton
+        m_MethodName: OnNumberButtonClick
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2724,7 +2759,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2105079188}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2738,7 +2773,7 @@ RectTransform:
   - {fileID: 2098509397}
   - {fileID: 2056639900}
   - {fileID: 2010197828}
-  m_Father: {fileID: 1634969131}
+  m_Father: {fileID: 864713487}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}

@@ -323,7 +323,6 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/VSSettingsProvider.ref.dll"
 "Assets/Scripts/DigitalLock.cs"
 "Assets/Scripts/DigitalLockView.cs"
-"Assets/Scripts/Interfaces/INumberButtonClickable.cs"
 -langversion:8.0
 
 /deterministic

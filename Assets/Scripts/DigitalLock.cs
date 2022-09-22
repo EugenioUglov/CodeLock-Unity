@@ -1,11 +1,8 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using Interfaces;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class DigitalLock : MonoBehaviour, INumberButtonClickable
+public class DigitalLock : MonoBehaviour
 {
     [SerializeField] private int _correctCode = 1111;
     [Header("Relations")]
@@ -15,8 +12,17 @@ public class DigitalLock : MonoBehaviour, INumberButtonClickable
     
     private string _stringUserCode;
     private bool _isWorking = true;
+
+    private void OnEnable()
+    {
+        _digitalLockView.OnNumberButtonClickEvent += OnClickNumberButton;
+    }
     
-    
+    private void OnDisable()
+    {
+        _digitalLockView.OnNumberButtonClickEvent -= OnClickNumberButton;
+    }
+
     public void SetCorrectCode(int newCode)
     {
         _correctCode = newCode;

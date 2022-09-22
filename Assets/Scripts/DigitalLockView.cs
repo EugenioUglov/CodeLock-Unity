@@ -1,41 +1,28 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Interfaces;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class DigitalLockView : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI _outputCodeTMP;
-    [SerializeField] private MonoBehaviour _controller;
-    private INumberButtonClickable _numberButtonClickable;
-    private string _outputCodeString;
-
-
-    private void Awake()
-    {
-        _numberButtonClickable = _controller.GetComponent<INumberButtonClickable>();
-    }
-
-    public void SetCode(int newCode)
-    {
-        _outputCodeTMP.text = newCode.ToString();
-    }
+    public delegate void OnNumberButtonClickDelegate(int clickedNumber);
+    public OnNumberButtonClickDelegate OnNumberButtonClickEvent;
     
+    [SerializeField] private TextMeshProUGUI _outputCodeTMP;
+    private string _outputCodeString;
+    
+
     public void SetOutputCodeString(string newCodeString)
     {
         _outputCodeTMP.text = newCodeString;
     }
 
-    public string GetOutputCode()
+    public string GetOutputCodeString()
     {
         return _outputCodeString;
     }
 
-    public void OnClickNumberButton(int clickedNumber)
+    public void OnNumberButtonClick(int clickedNumber)
     {
-        _numberButtonClickable.OnClickNumberButton(clickedNumber);
+        OnNumberButtonClickEvent?.Invoke(clickedNumber);
     }
+    
 }
