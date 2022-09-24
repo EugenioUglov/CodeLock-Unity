@@ -1,13 +1,14 @@
 using System;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class DigitalLock : MonoBehaviour
 {
     [SerializeField] private int _correctCode = 1111;
     [Header("Relations")]
-    [SerializeField] private UnityEvent _onCorrectCodeInputed;
-    [SerializeField] private UnityEvent _onWrongCodeInputed;
+    [SerializeField] private UnityEvent _onCorrectCodeInputted;
+    [SerializeField] private UnityEvent _onWrongCodeInputted;
     [SerializeField] private DigitalLockView _digitalLockView;
     
     private string _stringUserCode;
@@ -16,12 +17,12 @@ public class DigitalLock : MonoBehaviour
 
     private void OnEnable()
     {
-        _digitalLockView.OnNumberButtonClickEvent += OnClickNumberButton;
+        _digitalLockView.OnNumberButtonClickEvent += OnNumberButtonClick;
     }
     
     private void OnDisable()
     {
-        _digitalLockView.OnNumberButtonClickEvent -= OnClickNumberButton;
+        _digitalLockView.OnNumberButtonClickEvent -= OnNumberButtonClick;
     }
 
     
@@ -30,19 +31,19 @@ public class DigitalLock : MonoBehaviour
         _correctCode = newCode;
     }
 
-    public void OnWrongCodeInputed()
+    public void OnWrongCodeInputted()
     {
         _stringUserCode = "";
         _digitalLockView.SetOutputCodeString(_stringUserCode);
     }
 
-    public void OnCorrectCodeInputed()
+    public void OnCorrectCodeInputted()
     {
         _isWorking = false;
     }
     
     
-    private void OnClickNumberButton(int clickedNumber)
+    private void OnNumberButtonClick(int clickedNumber)
     {
         if (_isWorking == false) return;
         
@@ -55,11 +56,11 @@ public class DigitalLock : MonoBehaviour
             if (userCode == _correctCode)
             {
                 // On code is correct.
-                _onCorrectCodeInputed?.Invoke();
+                _onCorrectCodeInputted?.Invoke();
             }
             else
             {
-                _onWrongCodeInputed?.Invoke();
+                _onWrongCodeInputted?.Invoke();
             }
         }
     }
